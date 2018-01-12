@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <form>
+		<i>Enter text or numbers as labels</i><br>
+		<i>Path must be relative your default 'save as' directory</i><br>
+		<i><u>Example</u>   Label: SaveDir1   Path: MySaveDirs/Save_dir_1</i><br>
+		<i>To remove all, you must then enter & save at least 1 new</i><br>
+		<i>To reset, you must enter and save the same number of entries</i>
+		<i>Debug messages goes to browser console</i><br><br>
+
+		<div id="dynamicInput"></div>
+
+		<input type="button" id="addLabelButton" value="Add another input (max is 50)"><br>
+		<button type="submit">Save</button>
+		<input type="button" id="resetButton" value="Reset">
+		<input type="button" id="removeAllButton" value="Remove All"><br>
+		Set debugging:  <input type="checkbox" id="debuggingBox" name="debugging" value="debug">
+
+    </form>
+
+    <script src="options.js"></script>
+
+  </body>
+
+</html>

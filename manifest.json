@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Context Save",
+  "version": "1.0",
+  "description": "Adds custom 'Save Image' options to the context menu",
+  "author": "John McKinnon",
+  
+  
+  ,
+
+  "applications": {
+    "gecko": {
+	  	"id": "contextsave@example.org",
+		"strict_min_version": "52.0"
+	}
+  },
+
+  "content_scripts": [
+	  {
+		"matches": ["<all_urls>"],
+		"js": ["content_scripts/jquery-3.2.1.min.js", "content_scripts/content.js"]
+	  }
+  ],
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "menus",
+	"downloads",
+	"storage"
+  ],
+
+  "background": {
+	"scripts": ["background.js"]
+  }
+}
