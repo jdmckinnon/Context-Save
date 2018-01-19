@@ -1,12 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Context Save",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Adds custom 'Save Image' options to the context menu",
   "author": "John McKinnon",
-  
-  
-  ,
+  "homepage_url": "https://github.com/jdmckinnon/Context-Save",
+
 
   "applications": {
     "gecko": {

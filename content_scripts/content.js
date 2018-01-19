@@ -12,7 +12,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 $(document).ready(function() {
   $('img').contextmenu(function(){
-    var srcimg = $(this).attr('src');
+    var srcimg = $(this).prop('src');
     //console.log('Content script sees SRC is: '+ srcimg);
     browser.runtime.sendMessage({url: srcimg});
   });
